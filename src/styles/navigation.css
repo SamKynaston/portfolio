@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    @apply flex justify-between m-2
+}
+
+nav .nav-center {
+    @apply flex justify-center
+}
+
+nav a {
+    @apply flex p-2
+}
