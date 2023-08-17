@@ -7,13 +7,22 @@ body {
 }
 
 section.box-hold {
-    @apply flex justify-center m-6
+    @apply flex justify-center m-4
+}
+
+box {
+    @apply bg-cozy-lght-300 dark:bg-cozy-400 border-cozy-lght-100 dark:border-cozy-300 border-solid border-2 p-4 rounded-md
 }
 
 box.main {
-    @apply bg-cozy-lght-200 dark:bg-cozy-200 p-6 rounded-md
+    @apply bg-cozy-lght-200 dark:bg-cozy-200 dark:border-cozy-300 w-2/4
+}
+
+box.secondary {
+    width: 100%;
+    @apply flex my-2
 }
 
 a#highlighted {
-    @apply hover:text-cozy-pr-400 text-cozy-pr-100 dark:text-cozy-pr-500
+    @apply hover:text-cozy-pr-400 text-cozy-pr-100 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
 }

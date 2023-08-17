@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row {
+    @apply flex flex-row flex-wrap content-start gap-1
+}
+
+.column {
+    @apply grow w-5/12
+}
