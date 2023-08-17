@@ -2,6 +2,7 @@
 //import Canvas from "../components/sketch-pad-2";
 import Navigation from "../components/navigation";
 import '../styles/base.css'
+import "../styles/main-box.css"
 ---
 
 <html lang="en">
@@ -14,6 +15,10 @@ import '../styles/base.css'
 	</head>
 	<body>
 		<Navigation />
-		<slot />
+		<section class="box-hold">
+            <box class="main">
+                <slot />
+            </box>
+        </section>
 	</body>
 </html>
