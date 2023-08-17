@@ -11,10 +11,10 @@ class Navigation extends Component<Props, State> {
         return (
             <nav>
                 <span className="nav-left">
-                    <a href="./">Kynno</a>
+                    <a href="/">Kynno</a>
                 </span>
                 <span className="nav-right">
-                    <a href="./portfolio">Portfolio</a>
+                    <a href="/portfolio">Portfolio</a>
                 </span>
             </nav>
         )
