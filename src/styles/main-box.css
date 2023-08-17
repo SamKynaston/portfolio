@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-cozy-900 text-gray-50
+    @apply bg-cozy-lght-100 dark:bg-cozy-100 dark:text-gray-50
 }
 
 section.box-hold {
@@ -11,5 +11,9 @@ section.box-hold {
 }
 
 box.main {
-    @apply bg-opacity-20 bg-cozy-500 p-6 rounded-md
+    @apply bg-cozy-lght-200 dark:bg-cozy-200 p-6 rounded-md
+}
+
+a#highlighted {
+    @apply hover:text-cozy-pr-400 text-cozy-pr-100 dark:text-cozy-pr-500
 }
