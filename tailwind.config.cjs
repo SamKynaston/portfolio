@@ -7,6 +7,13 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			backgroundImage: (theme) => ({
+				'image-one':
+					"/src/images/logo-d.svg",
+				'image-two':
+					"/src/images/logo-w.svg",
+			}),
+
 			colors: {
 				'cozy': {
 					100: '#0c0c0c',
@@ -37,5 +44,12 @@ module.exports = {
 			},
 		},
 	},
+
+	variants: {
+		extend: {
+			backgroundImage: ['dark'],
+		},
+	},
+
 	plugins: [],
 }

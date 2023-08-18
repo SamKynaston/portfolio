@@ -8,7 +8,7 @@
 }
 
 section.box-hold {
-    @apply flex justify-center m-4 w-full my-14
+    @apply flex justify-center m-4 w-full mt-16
 }
 
 box {
@@ -16,7 +16,7 @@ box {
 }
 
 box.main {
-    @apply bg-cozy-lght-200 dark:bg-cozy-200 dark:border-cozy-300 w-2/4
+    @apply bg-cozy-lght-200 dark:bg-cozy-200 dark:border-cozy-300 xl:w-2/4 sm:w-full
 }
 
 box.secondary {

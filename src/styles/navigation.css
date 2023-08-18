@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 nav {
-    @apply fixed w-full
+    @apply fixed z-10 w-full bg-cozy-lght-400 dark:bg-cozy-100 border-cozy-lght-600 dark:border-cozy-200 backdrop-filter backdrop-blur-lg border-b
 }
 
 nav img {
