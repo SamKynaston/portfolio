@@ -17,11 +17,13 @@ import "../styles/columns.css"
 	</head>
 	<body>
 		<Navigation />
-		<section class="box-hold">
-            <box class="main">
-                <slot />
-            </box>
-        </section>
+		<span class="centered">
+			<section class="box-hold">
+				<box class="main">
+					<slot />
+				</box>
+			</section>
+		</span>
 		<Footer />
 	</body>
 </html>

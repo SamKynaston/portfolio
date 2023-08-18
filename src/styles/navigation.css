@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 nav {
+    @apply fixed w-full
+}
+
+nav .content {
     @apply flex justify-between m-2
 }
 

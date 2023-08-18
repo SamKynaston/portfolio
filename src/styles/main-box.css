@@ -6,8 +6,12 @@ body {
     @apply bg-cozy-lght-100 dark:bg-cozy-100 dark:text-gray-50
 }
 
+.centered {
+    @apply flex h-screen items-center justify-center
+}
+
 section.box-hold {
-    @apply flex justify-center m-4
+    @apply flex justify-center m-4 w-full
 }
 
 box {
