@@ -6,6 +6,10 @@ nav {
     @apply fixed w-full
 }
 
+nav img {
+    @apply h-5
+}
+
 nav .content {
     @apply flex justify-between m-2
 }

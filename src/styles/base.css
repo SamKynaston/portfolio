@@ -6,6 +6,14 @@ body {
     @apply m-0 p-0 text-center
 }
 
+a {
+    @apply hover:text-cozy-pr-400 text-cozy-pr-100 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
+}
+
 h1#title {
     @apply text-3xl my-2 font-bold text-center
+}
+
+hr#main {
+    @apply my-2
 }
