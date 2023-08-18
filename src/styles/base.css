@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 body {
-    @apply m-0 p-0 text-center
+    @apply m-0 p-0 text-center bg-cozy-lght-100 dark:bg-cozy-100 dark:text-gray-50 
 }
-
 a#link {
-    @apply hover:text-cozy-pr-400 text-cozy-pr-100 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
+    @apply hover:text-cozy-pr-100 hover:underline text-cozy-pr-400 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
 }
 
 h1#title {
@@ -15,5 +14,5 @@ h1#title {
 }
 
 hr#main {
-    @apply my-2
+    @apply my-2 p-0.5 border-cozy-pr-400 bg-cozy-pr-400 rounded-md
 }
