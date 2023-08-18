@@ -2,6 +2,10 @@
 //import Canvas from "../components/sketch-pad-2";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
+
+import faviconLight from "../favicon-w.svg"
+import faviconDark from "../favicon-b.svg"
+
 import '../styles/base.css'
 import "../styles/main-box.css"
 import "../styles/columns.css"
@@ -10,10 +14,11 @@ import "../styles/columns.css"
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml"  media="(prefers-color-scheme: dark)" href={faviconLight} />
+		<link rel="icon" type="image/svg+xml"  media="(prefers-color-scheme: light)" href={faviconDark} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Kynno</title>
 	</head>
 	<body>
 		<Navigation />

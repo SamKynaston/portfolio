@@ -14,5 +14,5 @@ h1#title {
 }
 
 hr#main {
-    @apply my-2 p-0.5 border-cozy-pr-400 bg-cozy-pr-400 rounded-md
+    @apply my-2 p-0.5 bg-cozy-lght-100 border-cozy-lght-100 dark:bg-cozy-200 dark:border-cozy-300 rounded-md
 }
