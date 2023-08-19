@@ -15,7 +15,7 @@ class Navigation extends Component<Props, State> {
                 <span className="content">
                     <span className="nav-left">
                         <a href="/">
-                            <picture>
+                            <picture className="p-0.5">
                                 <source
                                     srcSet={logo}
                                     media="(prefers-color-scheme: dark)"
