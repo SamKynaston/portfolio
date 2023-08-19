@@ -22,7 +22,7 @@ class Navigation extends Component<Props, State> {
                                 />
                                 <img
                                     src={logoBlack}
-                                    alt="Browser with large and small images of a coffee cup and plants"
+                                    alt="Kynno"
                                 />
                             </picture>
                         </a>
