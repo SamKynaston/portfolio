@@ -1,4 +1,4 @@
-import "../styles/navigation.css";
+import "../styles/footer.css";
 import {createRef, Component} from "react";
 
 type Props = {};
@@ -10,7 +10,7 @@ class Footer extends Component<Props, State> {
     render() {
         return (
             <footer>
-                
+                Visit me on <a id="link" href="">Github!</a>
             </footer>
         )
     }
