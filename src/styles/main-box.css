@@ -12,7 +12,7 @@ section.box-hold {
 }
 
 box {
-    @apply bg-cozy-lght-300 dark:bg-cozy-400 border-cozy-lght-100 dark:border-cozy-300 border-solid border-2 p-4 rounded-md
+    @apply bg-cozy-lght-300 dark:bg-cozy-400 border-cozy-lght-100 dark:border-cozy-300 border-solid border p-4 rounded-md
 }
 
 box.main {
