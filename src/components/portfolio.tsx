@@ -10,13 +10,13 @@ interface Props {
 
 const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) => {
   return (
-      <section className="column">
+      <section className="column-grow">
           <box className="secondary">
               <h1 id="title">{name}</h1>
 
               <section className="centered">
                 {languages.length > 0 ? 
-                  <div className="column">
+                  <div className="column-grow">
                     <h2 id="subtitle">Language(s) used</h2>
                     <div className="centered">
                       {languages.map(language => {return (<TagItem name={language}/>)})}
@@ -25,7 +25,7 @@ const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) 
                 : false}
 
                 {frameworks.length > 0 ?
-                  <div className="column">
+                  <div className="column-grow">
                     <h2 id="subtitle">Framework(s) used</h2>
                     <div className="centered">
                       {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
@@ -36,7 +36,7 @@ const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) 
 
               <hr id="main" />
               <div className="centered">
-                {links.map(link => {return (<a className="column" id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
+                {links.map(link => {return (<a className="column-grow" id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
               </div>
           </box>
       </section>
