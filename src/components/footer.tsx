@@ -10,7 +10,7 @@ class Footer extends Component<Props, State> {
     render() {
         return (
             <footer>
-                Visit me on <a id="link" href="">Github!</a>
+                Visit me on <a id="link" href="https://github.com/SamKynaston/portfolio/" target="_blank">Github!</a>
             </footer>
         )
     }

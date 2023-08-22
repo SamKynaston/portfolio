@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.centered {
-    /*@apply flex h-screen items-center justify-center*/
-    @apply flex h-full w-full items-center justify-center
-}
-
 section.box-hold {
     @apply justify-center m-4 w-full mt-16 xl:w-2/3
 }

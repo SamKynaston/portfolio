@@ -12,7 +12,7 @@ class Navigation extends Component<Props, State> {
     render() {
         return (
             <nav className="bg-opacity-80">
-                <span className="content">
+                <span className="nav-content">
                     <span className="nav-left">
                         <a href="/">
                             <picture className="p-0.5">

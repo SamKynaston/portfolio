@@ -13,6 +13,15 @@ h1#title {
     @apply text-3xl my-2 font-bold text-center
 }
 
+h1#subtitle {
+    @apply text-2xl my-2 font-bold text-center
+}
+
 hr#main {
     @apply my-2 p-px bg-cozy-100 border-cozy-100 dark:bg-cozy-lght-100 dark:border-cozy-lght-100 rounded-md
+}
+
+.content {
+    /*@apply flex h-screen items-center justify-center*/
+    @apply flex h-full w-full items-center justify-center bg-cozy-lght-300 dark:bg-cozy-300
 }
