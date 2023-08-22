@@ -10,6 +10,10 @@
     @apply bg-blue-600
 }
 
+.tag#python {
+    @apply bg-blue-500
+}
+
 .tag#c-sharp {
     @apply bg-green-600
 }
