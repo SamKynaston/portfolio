@@ -10,22 +10,30 @@ interface Props {
 
 const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) => {
   return (
-      <section className="column">
+      <section className="column-grow">
           <box className="secondary">
               <h1 id="title">{name}</h1>
 
-              <h2 id="subtitle">Language(s) used</h2>
               <section className="centered">
-                  {languages.map(language => {return (<TagItem name={language}/>)})}
-              </section>
+                <div className="column">
+                  <h2 id="subtitle">Language(s) used</h2>
+                  <div className="centered">
+                    {languages.map(language => {return (<TagItem name={language}/>)})}
+                  </div>
+                </div>
 
-            <h2 id="subtitle">Framework(s) used</h2>
-              <section className="centered">
-                  {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
+                <div className="column">
+                  <h2 id="subtitle">Framework(s) used</h2>
+                  <div className="centered">
+                    {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
+                  </div>
+                </div>
               </section>
 
               <hr id="main" />
-              {links.map(link => {return (<a id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
+              <div className="centered">
+                {links.map(link => {return (<a className="column" id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
+              </div>
           </box>
       </section>
   );

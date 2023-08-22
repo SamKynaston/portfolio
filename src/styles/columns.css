@@ -7,6 +7,10 @@
 }
 
 .column {
+    @apply w-full block
+}
+
+.column-grow {
     @apply md:w-5/12 md:grow w-full block
 }
 
