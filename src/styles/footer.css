@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 footer {
-    @apply fixed p-2 z-10 w-full bg-cozy-lght-200 dark:bg-cozy-200 border-cozy-lght-500 dark:border-cozy-500 border-t
+    @apply p-2 z-10 w-full bg-cozy-lght-200 dark:bg-cozy-200 border-cozy-lght-500 dark:border-cozy-500 border-t
 }

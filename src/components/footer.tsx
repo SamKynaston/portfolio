@@ -10,6 +10,7 @@ class Footer extends Component<Props, State> {
     render() {
         return (
             <footer>
+                Copyrighted by Samuel Kynaston, 2023<br /><br />
                 Visit me on <a id="link" href="https://github.com/SamKynaston/portfolio/" target="_blank">Github!</a>
             </footer>
         )

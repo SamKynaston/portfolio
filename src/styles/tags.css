@@ -1,0 +1,15 @@
+.tag {
+    @apply rounded-md p-0.5 px-2 bg-red-600
+}
+
+.tag#javascript {
+    @apply bg-yellow-600
+}
+
+.tag#typescript {
+    @apply bg-blue-600
+}
+
+.tag#c-sharp {
+    @apply bg-green-600
+}

@@ -14,7 +14,7 @@ box.main {
     @apply bg-cozy-lght-200 dark:bg-cozy-200 dark:border-cozy-300 xl:w-2/4 sm:w-full
 }
 
-box.secondary {
+box.secondary, div.secondary {
     width: 100%;
     @apply block h-full
 }

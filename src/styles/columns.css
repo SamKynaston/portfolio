@@ -9,3 +9,8 @@
 .column {
     @apply md:w-5/12 md:grow w-full block
 }
+
+.centered {
+    /*@apply flex h-screen items-center justify-center*/
+    @apply flex w-full items-center justify-center
+}
