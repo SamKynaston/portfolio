@@ -6,19 +6,19 @@ body {
     @apply m-0 p-0 text-center bg-cozy-lght-200 dark:bg-cozy-200 dark:text-gray-50 
 }
 a#link {
-    @apply hover:text-cozy-pr-100 hover:underline text-cozy-pr-400 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
+    @apply hover:text-cozy-pr-200 hover:underline text-cozy-pr-500 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
 }
 
 h1#title {
     @apply text-3xl my-2 font-bold text-center
 }
 
-h1#subtitle {
-    @apply text-2xl my-2 font-bold text-center
+h2#subtitle {
+    @apply text-xl my-2 font-bold text-center
 }
 
 hr#main {
-    @apply my-2 p-px bg-cozy-100 border-cozy-100 dark:bg-cozy-lght-100 dark:border-cozy-lght-100 rounded-md
+    @apply my-2 p-px bg-cozy-100 border-cozy-100 dark:bg-cozy-600 dark:border-cozy-600 rounded-md
 }
 
 .content {
