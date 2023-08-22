@@ -2,10 +2,25 @@
 //import Canvas from "../components/sketch-pad-2";
 import Cozy from "../layouts/cozy.astro";
 import '../styles/base.css'
+import "../styles/icon.css"
 ---
 
 <Cozy>
-	<h1 id="title">Hi! 👋</h1>
-	<h2 id="subtitle">I'm Samuel Kynaston (He/They).</h2>
-	<p class="my-2">This website is unfinished. However, I have deployed the basics so you can get a rough idea of who I am and what I do. Please check out my <a id="link" href="/portfolio">portfolio!</a></p>
+	<section class="row">
+		<box class="secondary"> 
+			<section class="centered gap-8">
+				<section class="column">
+					<img src="/src/favicon-b.svg" width=100 class="icon"/>
+				</section>
+				<section class="column">
+					<h1 class="md:text-center" id="title">Hi! 👋</h1>
+					<h2 class="md:text-left" id="subtitle">I'm Samuel Kynaston (He/They).</h2>
+				</section>
+			</section>
+		</box>
+
+		<box class="secondary">
+			<p class="my-2">This website is unfinished. However, I have deployed the basics so you can get a rough idea of who I am and what I do. Please check out my <a id="link" href="/portfolio">portfolio!</a></p>
+		</box>
+	</section>
 </Cozy>
