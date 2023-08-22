@@ -15,19 +15,23 @@ const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) 
               <h1 id="title">{name}</h1>
 
               <section className="centered">
-                <div className="column">
-                  <h2 id="subtitle">Language(s) used</h2>
-                  <div className="centered">
-                    {languages.map(language => {return (<TagItem name={language}/>)})}
-                  </div>
-                </div>
+                {languages.length > 0 ? 
+                  <div className="column">
+                    <h2 id="subtitle">Language(s) used</h2>
+                    <div className="centered">
+                      {languages.map(language => {return (<TagItem name={language}/>)})}
+                    </div>
+                  </div> 
+                : false}
 
-                <div className="column">
-                  <h2 id="subtitle">Framework(s) used</h2>
-                  <div className="centered">
-                    {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
+                {frameworks.length > 0 ?
+                  <div className="column">
+                    <h2 id="subtitle">Framework(s) used</h2>
+                    <div className="centered">
+                      {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
+                    </div>
                   </div>
-                </div>
+                : false }
               </section>
 
               <hr id="main" />
