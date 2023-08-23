@@ -1,5 +1,5 @@
 .tag {
-    @apply rounded-md p-0.5 px-2 bg-red-600 mb-4
+    @apply rounded-md p-0.5 px-2 bg-red-600 mb-4 text-slate-100
 }
 
 .tag#javascript {
