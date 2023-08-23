@@ -11,7 +11,7 @@
 }
 
 .column-grow {
-    @apply md:w-5/12 md:grow w-full block
+    @apply xl:w-5/12 xl:grow w-full block
 }
 
 .column .icon {
@@ -29,4 +29,8 @@
 .centered {
     /*@apply flex h-screen items-center justify-center*/
     @apply block md:flex w-full items-center justify-center
+}
+
+.centered-xl {
+    @apply block xl:flex w-full items-center justify-center
 }
