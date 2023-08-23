@@ -26,9 +26,10 @@ class Navigation extends Component<Props, State> {
                                 />
                             </picture>
                         </a>
+                        <a href="/portfolio">Portfolio</a>
                     </span>
                     <span className="nav-right">
-                        <a href="/portfolio">Portfolio</a>
+                        
                     </span>
                 </span>
             </nav>

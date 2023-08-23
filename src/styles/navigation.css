@@ -14,8 +14,8 @@ nav .nav-content {
     @apply flex justify-between m-2
 }
 
-nav .nav-center {
-    @apply flex justify-center
+nav .nav-center, .nav-left, .nav-right {
+    @apply flex
 }
 
 nav a {
