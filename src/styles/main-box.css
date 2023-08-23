@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 section.box-hold {
-    @apply justify-center m-4 w-full mt-16 xl:w-2/3
+    @apply justify-center m-4 w-full md:mt-16 xl:w-2/3
 }
 
 box, .box {
