@@ -6,12 +6,13 @@ section.box-hold {
     @apply justify-center m-4 w-full mt-16 xl:w-2/3
 }
 
-box {
+box, .box {
     @apply bg-cozy-lght-300 dark:bg-cozy-400 border-cozy-lght-100 dark:border-cozy-300 border-solid border p-4 rounded-md
 }
 
 box.main {
-    @apply bg-cozy-lght-200 dark:bg-cozy-200 dark:border-cozy-300 xl:w-2/4 sm:w-full
+    width: 100%;
+    @apply bg-cozy-lght-200 dark:bg-cozy-200 dark:border-cozy-300 md:w-3/4 sm:w-full block h-full
 }
 
 box.secondary, div.secondary {

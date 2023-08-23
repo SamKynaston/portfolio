@@ -14,10 +14,6 @@
     @apply md:w-5/12 md:grow w-full block
 }
 
-.column {
-
-}
-
 .column .icon {
     @apply block flex justify-center mx-auto md:mx-0
 }

@@ -11,7 +11,7 @@ interface Props {
 const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) => {
   return (
       <section className="column-grow">
-          <box className="secondary">
+          <box className="main w-full">
               <h1 id="title">{name}</h1>
 
               <section className="centered">
