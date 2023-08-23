@@ -5,7 +5,7 @@
 body {
     @apply m-0 p-0 text-center bg-cozy-lght-200 dark:bg-cozy-200 dark:text-gray-50 
 }
-a#link {
+a, a#link {
     @apply hover:text-cozy-pr-200 hover:underline text-cozy-pr-500 dark:text-cozy-pr-500 dark:hover:text-cozy-pr-600
 }
 
@@ -14,11 +14,11 @@ h1#title {
 }
 
 h2#subtitle {
-    @apply text-xl my-2 font-bold text-center
+    @apply text-xl mb-2 font-bold text-center
 }
 
 hr#main {
-    @apply my-2 p-px bg-cozy-100 border-cozy-100 dark:bg-cozy-600 dark:border-cozy-600 rounded-md
+    @apply mb-2 p-px bg-cozy-100 border-cozy-100 dark:bg-cozy-600 dark:border-cozy-600 rounded-md
 }
 
 .content {
