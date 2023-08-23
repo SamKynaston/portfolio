@@ -11,13 +11,17 @@ nav img {
 }
 
 nav .nav-content {
-    @apply flex justify-between m-2
+    @apply md:flex block justify-between m-2
 }
 
 nav .nav-center, .nav-left, .nav-right {
-    @apply flex
+    @apply md:flex block text-center w-full
 }
 
 nav a {
-    @apply flex p-2
+    @apply md:flex block p-2 sm:w-full sm:w-auto
+}
+
+nav a picture {
+    @apply block flex justify-center mx-auto md:mx-0
 }
