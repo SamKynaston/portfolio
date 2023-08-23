@@ -3,7 +3,7 @@
 }
 
 .tag#javascript {
-    @apply bg-yellow-600
+    @apply bg-yellow-400 text-gray-900
 }
 
 .tag#typescript {
