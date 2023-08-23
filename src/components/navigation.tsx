@@ -1,7 +1,7 @@
 import "../styles/navigation.css";
 import {createRef, Component} from "react";
-import logo from "../images/logo-w.svg";
-import logoBlack from "../images/logo-d.svg";
+import logo from "../../public/images/logo-w.svg";
+import logoBlack from "../../public/images/logo-d.svg";
 
 type Props = {};
 type State = {};
