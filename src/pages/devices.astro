@@ -1,0 +1,49 @@
+---
+//import Canvas from "../components/sketch-pad-2";
+import Cozy from "../layouts/cozy.astro";
+import '../styles/base.css'
+import "../styles/icon.css"
+
+const devices = [
+    {
+        "name":"Olympic",
+        
+        "specifications":[
+            {
+                "type":"CPU",
+                "name": "Ryzen 5 5600X",
+                "link":"https://www.amd.com/en/products/cpu/amd-ryzen-5-5600x"
+            },
+
+            {
+                "type":"GPU",
+                "name": "ROG STRIX RX 6650 XT",
+                "link":"https://www.amd.com/en/products/graphics/amd-radeon-rx-6650-xt"
+            }
+        ],
+
+        "frameworks":["Express.TS"],
+    }
+]
+---
+
+<Cozy>
+    <section class="row centered gap-4 flex">
+        <box class="centered main">
+            <h1 id="title" class="my-0 mb-5">Desktops</h1>
+            <section class="column-grow box h-full">
+                <h2 id="subtitle" class="my-0 mb-5">Olympic</h2>
+                <section class="xl:grid xl:grid-cols-1 centered-xl xl:gap-4">
+                    <section class="column-grow box h-full w-full">
+					    <h2 id="subtitle">Device Specifications</h2>
+                        <ul class="md:text-left text-center">
+                            <li>CPU: <b><a id="link" href="https://www.amd.com/en/products/cpu/amd-ryzen-5-5600x">Ryzen 5 5600X</a></b></li>
+                            <li class="my-2">GPU: <a id="link" href="https://www.amd.com/en/products/graphics/amd-radeon-rx-6650-xt">ROG Strix RX 6650 XT</a></li>
+                            <li class="my-2">RAM: 32GB DDR4-3600 CL16</li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+        </box>
+    </section>
+</Cozy>
