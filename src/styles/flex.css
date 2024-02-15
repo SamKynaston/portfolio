@@ -11,7 +11,7 @@
 }
 
 .column-grow {
-    @apply xl:w-5/12 xl:grow w-full
+    @apply w-full
 }
 
 .column .icon {
