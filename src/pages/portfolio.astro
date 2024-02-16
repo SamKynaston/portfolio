@@ -7,6 +7,30 @@ import "../styles/flex.css"
 
 const portfolio = [
     {
+        "name":"Social Media Project",
+        "languages":["C-Sharp", "Typescript", "Docker"],
+        "frameworks":["Express.TS", "React.TS"],
+        "links": [
+            ["Compiled Repository", "https://github.com/SamKynaston/Social-Media-Project"],
+            ["API", "https://github.com/SamKynaston/social-media-backend"],
+            ["Webapp", "https://github.com/SamKynaston/social-media-frontend"],
+            ["Type Definitions", "https://github.com/SamKynaston/social-media-types"],
+        ]
+    },
+
+    {
+        "name":"Portfolio Website",
+        "languages":["Typescript", "Javascript"],
+        "frameworks":["Astro", "React.TS"],
+        "links": [
+            ["Compiled Repository", "https://github.com/SamKynaston/Social-Media-Project"],
+            ["API", "https://github.com/SamKynaston/social-media-backend"],
+            ["Webapp", "https://github.com/SamKynaston/social-media-frontend"],
+            ["Type Definitions", "https://github.com/SamKynaston/social-media-types"],
+        ]
+    },
+
+    {
         "name":"Link Shortener",
         "languages":["Typescript"],
         "frameworks":["Express.TS"],
@@ -115,7 +139,7 @@ const portfolio = [
 
 <Cozy>
 	<h1 id="title">PORTFOLIO</h1>
-    <p>Last Updated: 22/08/23 @ 18:00 GMT</p>
+    <p>Last Updated: 16/02/24 @ 14:00 GMT</p>
     <section class="my-4 xl:grid xl:grid-cols-2 centered-xl xl:gap-4">
         {
             portfolio.map(item => {return (<PortfolioItem name={item.name} languages={item.languages} frameworks={item.frameworks} links={item.links}></PortfolioItem>)})
