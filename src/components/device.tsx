@@ -18,7 +18,7 @@ const PortfolioItem: React.FC<Props> = ({ name, specifications }) => {
                             <ul className="md:text-left text-center">
                                 {specifications.map(specification => {
                                     return <>
-                                        <li className="my-2">{specification.type}: {specification.link ? <b><a href="" id="link">{specification.name}</a></b> :  <b>{specification.name}</b> }</li>   
+                                        <li className="my-2">{specification.type}: {specification.link ? <b><a href={specification.link} id="link">{specification.name}</a></b> :  <b>{specification.name}</b> }</li>   
                                     </>  
                                 })}
                             </ul> 
