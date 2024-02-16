@@ -11,7 +11,7 @@ interface Props {
 const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) => {
   return (
       <section className="column-grow">
-          <box className="main w-full">
+          <section className="box main w-full">
               <h1 id="title">{name}</h1>
 
               <section className="centered">
@@ -38,7 +38,7 @@ const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) 
               <div className="centered">
                 {links.map(link => {return (<a className="column-grow" id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
               </div>
-          </box>
+          </section>
       </section>
   );
 };
