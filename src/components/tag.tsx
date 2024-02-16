@@ -6,15 +6,16 @@ let displayNames = {
 }
 
 let icons = {
-  "Python":<i class="fa-brands fa-python"></i>,
-  "JavaScript":<i class="fa-brands fa-square-js"></i>,
-  "React":<i class="fa-brands fa-react"></i>,
-  "React.JS":<i class="fa-brands fa-react"></i>,
-  ".NET":<i class="fa-brands fa-microsoft"></i>,
-  "C-sharp":<i class="fa-brands fa-microsoft"></i>,
-  "Typescript":<i class="fa-brands fa-microsoft"></i>,
-  "HTML5":<i class="fa-brands fa-html5"></i>,
-  "CSS":<i class="fa-brands fa-css3-alt"></i>
+  "Python":<i className="fa-brands fa-python"></i>,
+  "JavaScript":<i className="fa-brands fa-square-js"></i>,
+  "React":<i className="fa-brands fa-react"></i>,
+  "React.JS":<i className="fa-brands fa-react"></i>,
+  "React.TS":<i className="fa-brands fa-react"></i>,
+  ".NET":<i className="fa-brands fa-microsoft"></i>,
+  "C-sharp":<i className="fa-brands fa-microsoft"></i>,
+  "Typescript":<i className="fa-brands fa-microsoft"></i>,
+  "HTML5":<i className="fa-brands fa-html5"></i>,
+  "CSS":<i className="fa-brands fa-css3-alt"></i>
 }
 
 interface Props {
