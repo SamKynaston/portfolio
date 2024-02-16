@@ -1,7 +1,7 @@
 import "../styles/navigation.css";
 import {createRef, Component} from "react";
-import logo from "../../public/images/logo-w.svg";
-import logoBlack from "../../public/images/logo-d.svg";
+import logo from "../../images/logo-w.svg";
+import logoBlack from "../../images/logo-d.svg";
 
 type Props = {};
 type State = {};
@@ -27,6 +27,7 @@ class Navigation extends Component<Props, State> {
                             </picture>
                         </a>
                         <a href="/portfolio">Portfolio</a>
+                        <a href="/devices">Devices</a>
                     </span>
                     <span className="nav-right">
                         

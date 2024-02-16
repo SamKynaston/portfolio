@@ -1,0 +1,114 @@
+---
+//import Canvas from "../components/sketch-pad-2";
+import Cozy from "../layouts/cozy.astro";
+import '../styles/base.css';
+import "../styles/icon.css";
+import DeviceItem from "../components/device";
+
+const desktops = [
+    {
+        "name":"Olympic",
+        
+        "specifications":[
+            {
+                "type":"CPU",
+                "name": "Ryzen 5 5600X",
+                "link":"https://www.amd.com/en/products/cpu/amd-ryzen-5-5600x"
+            },
+
+            {
+                "type":"GPU",
+                "name": "ROG STRIX RX 6650 XT",
+                "link":"https://www.amd.com/en/products/graphics/amd-radeon-rx-6650-xt"
+            },
+
+            {
+                "type":"RAM",
+                "name": "32GB DDR4-3600 CL16",
+            },
+
+            {
+                "type":"OS",
+                "name": "Windows 11",
+                "link":"https://en.wikipedia.org/wiki/Windows_11"
+            },
+        ],
+    }
+]
+
+const phones = [
+    {
+        "name":"Traffic (iPhone 12)",
+        
+        "specifications":[
+            {
+                "type":"OS",
+                "name": "iOS 17.3.1",
+                "link":"https://en.wikipedia.org/wiki/IOS_17"
+            },
+
+            {
+                "type":"CPU",
+                "name": "Apple A14",
+                "link":"https://en.wikipedia.org/wiki/Apple_A14"
+            },
+
+            {
+                "type":"GPU",
+                "name": "Apple-Designed 4 Core",
+            },
+
+            {
+                "type":"RAM",
+                "name": "4GB LPDDR4X",
+            }
+        ],
+    },
+
+    {
+        "name":"Aurora (iPhone 6s)",
+        
+        "specifications":[
+            {
+                "type":"OS",
+                "name": "iOS 15.8.1",
+                "link":"https://en.wikipedia.org/wiki/IOS_15"
+            },
+
+            {
+                "type":"CPU",
+                "name": "Apple A9",
+                "link":"https://en.wikipedia.org/wiki/Apple_A9"
+            },
+
+            {
+                "type":"GPU",
+                "name": "Six-Core PowerVR Series 7XT",
+            },
+
+            {
+                "type":"RAM",
+                "name": "2GB LPDDR4",
+            }
+        ],
+    }
+]
+---
+
+<Cozy>
+    <section class="row centered gap-4 flex">
+        <box class="centered main">
+            <h1 id="title" class="my-0 mb-5">Desktops</h1>
+            {
+                desktops.map(item => {return (<DeviceItem name={item.name} specifications={item.specifications}></DeviceItem>)})
+            }
+        </box>
+
+        <box class="centered main">
+            <h1 id="title" class="my-0 mb-5">Phones</h1>
+            {
+                phones.map(item => {return (<DeviceItem name={item.name} specifications={item.specifications}></DeviceItem>)})
+            }
+        </box>
+    </section>
+</Cozy>
