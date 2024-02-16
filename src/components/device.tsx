@@ -8,7 +8,7 @@ interface Props {
 
 const PortfolioItem: React.FC<Props> = ({ name, specifications }) => {
     return (
-        <section className="column-grow box h-full w-full">
+        <section className="column-grow box h-full w-full my-2">
             {specifications.length > 0 ? 
                 <>
                     <h2 id="subtitle" className="my-0 mb-5">{name}</h2>
