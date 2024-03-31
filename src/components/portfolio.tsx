@@ -10,35 +10,33 @@ interface Props {
 
 const PortfolioItem: React.FC<Props> = ({ name, languages, frameworks, links }) => {
   return (
-      <section className="column-grow">
-          <section className="box main w-full">
-              <h1 id="title">{name}</h1>
+      <section className="column-grow box main w-full h-full">
+        <h1 id="title">{name}</h1>
 
-              <section className="centered">
-                {languages.length > 0 ? 
-                  <div className="column-grow">
-                    <h2 id="subtitle">Language(s) used</h2>
-                    <div className="centered">
-                      {languages.map(language => {return (<TagItem name={language}/>)})}
-                    </div>
-                  </div> 
-                : false}
-
-                {frameworks.length > 0 ?
-                  <div className="column-grow">
-                    <h2 id="subtitle">Framework(s) used</h2>
-                    <div className="centered">
-                      {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
-                    </div>
-                  </div>
-                : false }
-              </section>
-
-              <hr id="main" />
+        <section className="centered">
+          {languages.length > 0 ? 
+            <div className="column-grow">
+              <h2 id="subtitle">Language(s) used</h2>
               <div className="centered">
-                {links.map(link => {return (<a className="column-grow" id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
+                {languages.map(language => {return (<TagItem name={language}/>)})}
               </div>
-          </section>
+            </div> 
+          : false}
+
+          {frameworks.length > 0 ?
+            <div className="column-grow">
+              <h2 id="subtitle">Framework(s) used</h2>
+              <div className="centered">
+                {frameworks.map(framework => {return (<TagItem name={framework}/>)})}
+              </div>
+            </div>
+          : false }
+        </section>
+
+        <hr id="main" />
+        <div className="centered">
+          {links.map(link => {return (<a className="column-grow" id="link" href={link[1]} target="_blank">{link[0]}<br /></a>)})}
+        </div>
       </section>
   );
 };
