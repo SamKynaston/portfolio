@@ -36,6 +36,38 @@ const desktops = [
     }
 ]
 
+const laptops = [
+    {
+        "name":"Nomadic",
+        "specifications": [
+            {
+                "type":"Model",
+                "name":"Lenovo Thinkpad T480S",
+                "link":"https://www.lenovo.com/gb/en/p/laptops/thinkpad/thinkpadt/thinkpad-t480s/22tp2tt480sl"
+
+            },
+
+            {
+                "type":"CPU",
+                "name":"i7-8650U",
+                "link":"https://ark.intel.com/content/www/us/en/ark/products/124968/intel-core-i7-8650u-processor-8m-cache-up-to-4-20-ghz.html"
+
+            },
+
+            {
+                "type":"RAM",
+                "name": "16GB DDR4",
+            },
+
+            {
+                "type":"OS",
+                "name":"Windows 11",
+                "link":"https://en.wikipedia.org/wiki/Windows_11"
+            },
+        ]
+    }
+]
+
 const phones = [
     {
         "name":"Traffic (iPhone 12)",
@@ -104,6 +136,13 @@ const phones = [
             }
         </box>
 
+        <box class="centered main">
+            <h1 id="title" class="my-0 mb-5">Laptops</h1>
+            {
+                laptops.map(item => {return (<DeviceItem name={item.name} specifications={item.specifications}></DeviceItem>)})
+            }
+        </box>
+        
         <box class="centered main">
             <h1 id="title" class="my-0 mb-5">Phones</h1>
             {
