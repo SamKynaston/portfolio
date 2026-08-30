@@ -14236,6 +14236,27 @@ ol.u-text-max-width,
   font-variant-numeric: oldstyle-nums !important;
 }
 
+/* MOBILE STYLES */
+@media (max-width: 767px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .box span {
+    width: 100%;
+  }
+  div .flex-row {
+    display: grid;
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  div .flex-row {
+    display: flex;
+    gap: 1rem;
+  }
+}
 /* GLOBAL STYLES */
 body {
   background-color: #fff;
@@ -14252,6 +14273,8 @@ html::-webkit-scrollbar {
 
 p, h1, h2, h3, h4, h5, h6 {
   color: #282828;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Article Styles */
@@ -14290,6 +14313,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .box {
   padding: 24px;
   border-radius: 40px;
+  width: min(900px, 100% - 2rem);
+  margin-inline: auto;
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 12px 30px rgba(0, 0, 0, 0.06);
   gap: 24px;
@@ -14297,8 +14322,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Image Styles */
 .box img.icon {
-  width: 196px;
-  height: 196px;
+  pointer-events: none;
+  width: clamp(120px, 30vw, 196px);
+  height: auto;
+  aspect-ratio: 1;
   border-radius: 16px;
 }
 
@@ -14319,9 +14346,9 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-.header-content h1 {
-  font-size: 4rem;
-  line-height: 4rem;
+.hero-content h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.1;
 }
 
 /* Verticle Positioning */
@@ -14366,6 +14393,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .doodle-canvas {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -14374,6 +14406,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content {
+  pointer-events: none;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -14396,6 +14429,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+.hero-content .box,
+.hero-content a,
+.hero-content button {
+  pointer-events: auto;
+}
+
 /* Middle Postioning */
 .hero.left {
   justify-content: flex-start;
@@ -14407,12 +14446,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .hero.right {
   justify-content: flex-end;
-}
-
-/* Flex Styles */
-div .flex-row {
-  display: flex;
-  gap: 1rem;
 }
 
 /* BODY STYLES */
